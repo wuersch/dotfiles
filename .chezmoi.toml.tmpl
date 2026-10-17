@@ -1,2 +1,4 @@
 [data]
    email = {{ promptStringOnce . "email" "Git email" | quote }}
+   icloud_user = {{ promptStringOnce . "icloud_user" "iCloud calendar username" | quote }}
+   location = {{ promptStringOnce . "location" "Weather location (e.g. City, Country)" | quote }}

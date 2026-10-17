@@ -1,0 +1,74 @@
+[bar]
+order = ["default"]
+
+[bar.default]
+background_opacity = 0.88
+start = ["group:g2"]
+center = ["group:g3"]
+end = ["media", "spacer_1", "tray", "screenshot", "clipboard", "volume", "brightness", "battery", "session"]
+margin_ends = 650
+panel_overlap = 0
+smart_auto_hide = true
+
+[[bar.default.capsule_group]]
+id = "g2"
+members = ["workspaces", "taskbar"]
+enabled = true
+opacity = 0.0
+
+[[bar.default.capsule_group]]
+id = "g3"
+members = ["clock", "notifications"]
+enabled = true
+opacity = 0.0
+
+[shell]
+polkit_agent = true
+
+[shell.greeter_sync]
+auto_sync = true
+
+[shell.screenshot]
+confirm_region = true
+directory = "/home/michael/Pictures/Screenshots"
+region_modifier = "super"
+
+[shell.session]
+show_shortcuts = false
+
+[theme]
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+[theme.templates]
+builtin_ids = ["gtk3", "gtk4", "kitty", "niri", "qt"]
+community_ids = ["claude-code", "neovim", "yazi"]
+
+[widget.media]
+hide_album_art = true
+hide_when_no_media = true
+max_length = 280
+title_scroll = "on_hover"
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.spacer_1]
+type = "spacer"
+length = 40
+
+[widget.taskbar]
+font_scale = 0.5
+group_by_workspace = true
+only_active_workspace = true
+scale = 2.0
+show_workspace_label = false
+workspace_group_capsule = false
+workspace_group_content = "dots"
+
+[widget.volume]
+show_label = false
+
+[widget.workspaces]
+show_labels = false

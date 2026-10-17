@@ -1,0 +1,11 @@
+[wallpaper]
+directory = "/home/michael/Pictures/Wallpapers"
+
+[wallpaper.default]
+path = "/home/michael/Pictures/Wallpapers/wallhaven-k8jjxd.jpg"
+
+[plugins]
+enabled = ["noctalia/mpvpaper"]
+
+[plugin_settings."noctalia/mpvpaper"]
+video_directory = "/home/michael/Videos/Wallpapers"
