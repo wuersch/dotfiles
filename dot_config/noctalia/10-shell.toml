@@ -3,6 +3,7 @@ order = ["default"]
 
 [bar.default]
 background_opacity = 0.88
+radius = 14
 start = ["group:g2"]
 center = ["group:g3"]
 end = ["media", "spacer_1", "tray", "screenshot", "clipboard", "volume", "brightness", "battery", "session"]

@@ -1,5 +1,5 @@
     window-rule {
-        geometry-corner-radius 20 // Set every window radius to 20
+        geometry-corner-radius 14
         clip-to-geometry true
     }
 
@@ -19,7 +19,6 @@
         default-window-height { fixed 920; }
     }
 
-    // if you use steam you will probably like these
     window-rule {
         match app-id="steam"
         exclude title=r#"^[Ss]team$"#
