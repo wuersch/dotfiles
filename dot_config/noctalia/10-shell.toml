@@ -33,6 +33,7 @@ auto_sync = true
 
 [shell.panel]
 control_center_placement = "floating"
+session_placement = "floating"
 
 [shell.screenshot]
 confirm_region = true
