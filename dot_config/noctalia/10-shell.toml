@@ -3,11 +3,13 @@ order = ["default"]
 
 [bar.default]
 background_opacity = 0.88
-radius = 14
+capsule_radius = 6
+radius = 10
 start = ["group:g2"]
 center = ["group:g3"]
 end = ["media", "spacer_1", "tray", "screenshot", "clipboard", "volume", "brightness", "battery", "session"]
-margin_ends = 650
+margin_edge = 10
+margin_ends = 24
 panel_overlap = 0
 smart_auto_hide = true
 
@@ -28,6 +30,9 @@ polkit_agent = true
 
 [shell.greeter_sync]
 auto_sync = true
+
+[shell.panel]
+control_center_placement = "floating"
 
 [shell.screenshot]
 confirm_region = true
